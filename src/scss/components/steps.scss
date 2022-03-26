@@ -1,0 +1,12 @@
+.steps {
+    padding-bottom: 200px;
+    &__title {
+        
+    }
+    &__content {
+        margin-top: 64px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 90px;
+    }
+}
