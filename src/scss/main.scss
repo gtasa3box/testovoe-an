@@ -15,9 +15,14 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/footer";
 
+//main
 @import "./components/intro";
 @import "./components/steps";
 @import "./components/up-level";
 
-@import "./components/footer";
+//lc
+@import "./components/lc/lc-main";
+@import "./components/lc/level-ban";
+@import "./components/lc/info-user";
