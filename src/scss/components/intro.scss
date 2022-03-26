@@ -9,6 +9,13 @@
         height: 1149px;
         left: -1244px;
         top: -454px;
+        @media (max-width: 420px) {
+            filter: blur(200px);
+            width: 343px;
+            height: 333px;
+            left: -230px;
+            top: -190px;
+        }
     }
     &:after {
         content: '';
@@ -19,6 +26,13 @@
         height: 1835px;
         left: 1556px;
         top: -42px;
+        @media (max-width: 420px) {
+            filter: blur(200px);
+            width: 503px;
+            height: 690px;
+            left: 272px;
+            top: 77px;
+        }
     }
     &__img {
         display: block;
@@ -32,7 +46,12 @@
         background-position: center;
         background-repeat: no-repeat;
         z-index: -1;
-        
+        @media (max-width: 420px) {
+            width: 882px;
+            height: 376px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
     &__content {
         padding-top: 290px;
@@ -40,6 +59,10 @@
         position: relative;
         width: 100%;
         z-index: 2;
+        @media (max-width: 420px) {
+            padding-top: 180px;
+            padding-bottom: 100px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -52,16 +75,32 @@
             width: 1050px;
             height: 1050px;
             z-index: -1;
+            @media (max-width: 420px) {
+                width: 488px;
+                height: 488px;
+                left: -15px;
+                top: -16px;
+            }
         }
     }
     &__logo {
         width: 90px;
         height: 90px;
+        @media (max-width: 420px) {
+            width: 42px;
+            height: 42px;
+            margin-bottom: 20px;
+        }
     }
     &__title {
         font-size: 54px;
         line-height: 69px;
         max-width: 500px;
+        @media (max-width: 420px) {
+            font-size: 32px;
+            line-height: 41px;
+            max-width: 320px;
+        }
         span {         
             background: linear-gradient(292.43deg, #01EFFF 14.87%, #22B0FF 85.66%);
             -webkit-background-clip: text;
@@ -73,6 +112,10 @@
     &__text {
         margin: 16px 0 42px;
         max-width: 500px;
+        @media (max-width: 420px) {
+            margin: 20px 0 30px;
+            max-width: 320px;
+        }
     }
     &__btn {
 
