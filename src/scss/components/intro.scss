@@ -1,0 +1,28 @@
+.intro {
+    position: relative;
+    &__content {
+        padding-top: 290px;
+        max-width: 500px;
+    }
+    &__logo {
+        width: 90px;
+        height: 90px;
+    }
+    &__title {
+        font-size: 54px;
+        line-height: 69px;
+        span {         
+            background: linear-gradient(292.43deg, #01EFFF 14.87%, #22B0FF 85.66%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+    &__text {
+        margin: 16px 0 42px;
+    }
+    &__btn {
+        
+    }
+}

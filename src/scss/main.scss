@@ -4,13 +4,14 @@
 @import "fonts";
 @import "settings";
 
+//componets-page
+@import "./components/general-style";
+@import "./components/wrapper";
+@import "./components/logo";
+@import "./components/btn";
+
 // подключения компонентов страницы
 @import "./components/header";
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+@import "./components/intro";
+
