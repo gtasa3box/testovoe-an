@@ -46,10 +46,6 @@
         background-color: transparent;
         border: none;
         outline: none;
-        background-image: url(../img/user-input/border.svg);
-        background-size: 100% 100%;
-        background-position: center;
-        background-repeat: no-repeat;
         width: 152px;
         height: 50px;
         font-weight: 600;
@@ -62,6 +58,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        cursor: pointer;
         span {
             display: inline-block;
             background-image: url(../img/user-input/plus.svg);
@@ -84,6 +81,25 @@
             left: -36px;
             top: 50%;
             transform: translateY(-50%);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/user-input/border.svg);
+            background-size: 100% 100%;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: 0.3s ease;
+            z-index: -1;
+        }
+        &:hover {
+            &:after {
+                background-image: url(../img/user-input/back.svg);
+            }
         }
     }
 }
