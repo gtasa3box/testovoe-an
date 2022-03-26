@@ -59,6 +59,10 @@
         position: relative;
         width: 100%;
         z-index: 2;
+        @media (max-width: 1220px) {
+            padding-top: 200px;
+            padding-bottom: 100px;
+        }
         @media (max-width: 420px) {
             padding-top: 180px;
             padding-bottom: 100px;
@@ -75,7 +79,14 @@
             width: 1050px;
             height: 1050px;
             z-index: -1;
+            @media (max-width: 1220px) {
+                left: initial;
+                right: -200px;
+                width: 800px;
+                height: 800px;
+            }
             @media (max-width: 420px) {
+                right: initial;
                 width: 488px;
                 height: 488px;
                 left: -15px;
@@ -86,6 +97,10 @@
     &__logo {
         width: 90px;
         height: 90px;
+        @media (max-width: 520px) {
+            width: 60px;
+            height: 60px;
+        }
         @media (max-width: 420px) {
             width: 42px;
             height: 42px;
@@ -96,6 +111,10 @@
         font-size: 54px;
         line-height: 69px;
         max-width: 500px;
+        @media (max-width: 520px) {
+            font-size: 43px;
+            line-height: 55px;
+        }
         @media (max-width: 420px) {
             font-size: 32px;
             line-height: 41px;
