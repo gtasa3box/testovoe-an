@@ -46,6 +46,9 @@
         align-items: center;
         width: 100%;
         margin-top: 60px;
+        @media (max-width: 1382px) and (min-width: 421px) {
+            justify-content: center;
+        }
         @media (max-width: 420px) {
             margin-top: 0;
         }

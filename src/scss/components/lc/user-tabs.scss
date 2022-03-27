@@ -3,6 +3,10 @@
     border: 1px solid #1E2339;
     border-radius: 14px;
     padding: 6px;
+    @media (max-width: 1382px) and (min-width: 421px) {
+        margin-bottom: 20px;
+        overflow-x: scroll;
+    }
     @media (max-width: 420px) {
         width: 100%;
         border: none;
@@ -24,6 +28,9 @@
         transition: 0.3s ease;
         cursor: pointer;
         user-select: none;
+        @media (max-width: 1382px) and (min-width: 421px) {
+            white-space: nowrap;
+        }
         @media (max-width: 420px) {
             padding: 23px 0;
             margin-right: 23px;

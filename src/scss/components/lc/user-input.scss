@@ -9,6 +9,11 @@
     padding-left: 56px;
     position: relative;
     width: 506px;
+    @media (max-width: 700px) and (min-width: 421px) {
+        border: none;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
     @media (max-width: 420px) {
         border: none;
         flex-wrap: wrap;
@@ -26,6 +31,10 @@
         left: 20px;
         top: 50%;
         transform: translateY(-50%);
+        @media (max-width: 700px) and (min-width: 421px) {
+            transform: translateY(0);
+            top: 23px;
+        }
         @media (max-width: 420px) {
             transform: translateY(0);
             top: 23px;
@@ -43,6 +52,11 @@
         right: 170px;
         top: 50%;
         transform: translateY(-50%);
+        @media (max-width: 700px) and (min-width: 421px) {
+            transform: translateY(0);
+            top: 23px;
+            right: 15px;
+        }
         @media (max-width: 420px) {
             top: 23px;
             transform: translateY(0);
@@ -60,6 +74,13 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 19px;
+        @media (max-width: 700px) and (min-width: 421px) {
+            width: 100%;
+            border: 1px solid #1E2339;
+            box-sizing: border-box;
+            border-radius: 14px;
+            padding: 18px 18px 18px 56px;
+        }
         @media (max-width: 420px) {
             width: 100%;
             border: 1px solid #1E2339;
@@ -93,6 +114,10 @@
         justify-content: center;
         position: relative;
         cursor: pointer;
+        @media (max-width: 700px) and (min-width: 421px) {
+            margin-top: 20px;
+            width: 100%;
+        }
         @media (max-width: 420px) {
             margin-top: 16px;
             width: 100%;
@@ -120,6 +145,9 @@
             left: 0;
             transition: 0.3s ease;
             z-index: -1;
+            @media (max-width: 700px) and (min-width: 421px) {
+                background-image: url(../img/btn/border.svg);
+            }
             @media (max-width: 420px) {
                 background-image: url(../img/btn/border.svg);
             }

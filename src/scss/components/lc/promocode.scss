@@ -7,6 +7,12 @@
     padding-left: 24px;
     border-radius: 10px;
     position: relative;
+    @media (max-width: 1275px) and (min-width: 421px) {
+        flex-wrap: wrap;
+        padding-right: 24px;
+        padding: 0;
+        margin-bottom: 30px;
+    }
     @media (max-width: 420px) {
         flex-wrap: wrap;
         padding-right: 24px;
@@ -19,6 +25,14 @@
         padding-right: 55px;
         border-right: 2px dashed #0A0D1D;
         box-sizing: border-box;
+        @media (max-width: 1275px) and (min-width: 421px) {
+            width: 100%;
+            padding-bottom: 30px;
+            border: none;
+            border-bottom: 2px dashed #0A0D1D;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
         @media (max-width: 420px) {
             width: 100%;
             padding-bottom: 30px;
@@ -36,6 +50,12 @@
             right: -15px;
             top: -22px;
             background-color: #0A0D1D;
+            @media (max-width: 1275px) and (min-width: 421px) {
+                top: initial;
+                bottom: -15px;
+                right: initial;
+                left: -18px;
+            }
             @media (max-width: 420px) {
                 top: initial;
                 bottom: -15px;
@@ -52,6 +72,11 @@
             right: -15px;
             bottom: -22px;
             background-color: #0A0D1D;
+            @media (max-width: 1275px) and (min-width: 421px) {
+                top: initial;
+                bottom: -15px;
+                right: -18px;
+            }
             @media (max-width: 420px) {
                 top: initial;
                 bottom: -15px;
@@ -90,6 +115,14 @@
     &__body {
         display: flex;
         padding-left: 46px;
+        @media (max-width: 1275px) and (min-width: 421px) {
+            width: 100%;
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 30px;
+            padding-bottom: 24px;
+            flex-direction: column; 
+        }
         @media (max-width: 420px) {
             width: 100%;
             padding-left: 24px;
@@ -102,6 +135,14 @@
     &__elem {
         position: relative;
         padding: 0 33px;
+        @media (max-width: 1275px) and (min-width: 421px) {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            margin-bottom: 16px;
+        }
         @media (max-width: 420px) {
             padding: 0;
             display: flex;
@@ -115,6 +156,9 @@
         }
         &:last-child {
             padding-right: 0;
+            @media (max-width: 1275px) and (min-width: 421px) {
+                margin-bottom: 0;
+            }
             @media (max-width: 420px) {
                 margin-bottom: 0;
             }
@@ -130,6 +174,9 @@
                 right: -0px;
                 top: 0;
                 transform: rotate(10deg);
+                @media (max-width: 1275px) and (min-width: 421px) {
+                    content: none;
+                }
                 @media (max-width: 420px) {
                     content: none;
                 }
@@ -158,6 +205,9 @@
             line-height: 19px;
             color: #B7BCDB;
             margin-top: 8px;
+            @media (max-width: 1275px) and (min-width: 421px) {
+                margin-top: 0;
+            }
             @media (max-width: 420px) {
                 margin-top: 0;
             }
@@ -175,6 +225,12 @@
         line-height: 23px;
         color: #13CDFF;
         padding: 13px 22px 14px 30px;
+        @media (max-width: 1275px) and (min-width: 421px) {
+            top: 24px;
+            right: 0;
+            transform: translateY(0);  
+            padding: 10px 18px 13px 26px; 
+        }
         @media (max-width: 420px) {
             top: 24px;
             right: 0;
