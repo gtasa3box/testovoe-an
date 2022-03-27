@@ -24,6 +24,10 @@
         position: relative;
         z-index: 2;
     }
+    div {
+        position: relative;
+        z-index: 2;
+    }
     &:hover {
         color: #070A18;
         span {
@@ -77,6 +81,11 @@
             }
             div {
                 display: none;
+            }
+            &:hover {
+                &:before {
+                    background-image: url(../img/btn/back-collapse.svg);
+                }
             }
         }
     }
