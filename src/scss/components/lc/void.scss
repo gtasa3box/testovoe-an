@@ -1,0 +1,38 @@
+.void {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img {
+        display: block;
+        background-image: url(../img/void/1.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 50px;
+    }
+    &__text {
+        max-width: 370px;
+        text-align: center;
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 26px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            right: -318px;
+            bottom: 35px;
+            background-image: url(../img/void/arrow.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 285px;
+            height: 217px;
+        }
+    }
+}

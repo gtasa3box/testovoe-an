@@ -58,14 +58,28 @@
 
                 <form class="user-input">
                     <input type="text" placeholder="Название промокода">
-                    <button>
+                    <button id="promo-btn" data-target="#promocode-block">
                         <span></span>
                         Создать
                     </button>
                 </form>
 
                 <div class="user-content">
-                    <div class="user-content__promocodes">
+                    <!-- void -->
+                    <div id="void-block" class="user-content__void">
+                        <div class="user-content__elem">
+
+                            <div class="void">
+                                <a class="void__img"></a>
+                                <p class="void__text">Вы пока не создали ни одного промокода.
+                                    Сделайте это прямо сейчас!</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <!-- promocodes -->
+                    <div id="promocode-block" class="user-content__promocodes">
                         <div class="user-content__elem">
 
                             <div class="promocode">
