@@ -81,6 +81,7 @@
             left: -36px;
             top: 50%;
             transform: translateY(-50%);
+            cursor: default;
         }
         &:after {
             content: '';
@@ -95,11 +96,6 @@
             left: 0;
             transition: 0.3s ease;
             z-index: -1;
-        }
-        &:hover {
-            &:after {
-                background-image: url(../img/user-input/back.svg);
-            }
         }
     }
 }
