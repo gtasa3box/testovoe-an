@@ -9,6 +9,11 @@
     padding-left: 56px;
     position: relative;
     width: 506px;
+    @media (max-width: 420px) {
+        border: none;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
     &:before {
         content: '';
         position: absolute;
@@ -21,6 +26,28 @@
         left: 20px;
         top: 50%;
         transform: translateY(-50%);
+        @media (max-width: 420px) {
+            transform: translateY(0);
+            top: 23px;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/user-input/2.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        right: 170px;
+        top: 50%;
+        transform: translateY(-50%);
+        @media (max-width: 420px) {
+            top: 23px;
+            transform: translateY(0);
+            right: 15px;
+        }
     }
     input {
         height: 100%;
@@ -33,6 +60,13 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 19px;
+        @media (max-width: 420px) {
+            width: 100%;
+            border: 1px solid #1E2339;
+            box-sizing: border-box;
+            border-radius: 14px;
+            padding: 18px 18px 18px 56px;
+        }
         &::placeholder {
             font-family: 'Rouben';
             font-style: normal;
@@ -59,6 +93,10 @@
         justify-content: center;
         position: relative;
         cursor: pointer;
+        @media (max-width: 420px) {
+            margin-top: 16px;
+            width: 100%;
+        }
         span {
             display: inline-block;
             background-image: url(../img/user-input/plus.svg);
@@ -68,20 +106,6 @@
             width: 12px;
             height: 12px;
             margin-right: 8px;
-        }
-        &::before {
-            content: '';
-            position: absolute;
-            background-image: url(../img/user-input/2.svg);
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 24px;
-            height: 24px;
-            left: -36px;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: default;
         }
         &:after {
             content: '';
@@ -96,6 +120,9 @@
             left: 0;
             transition: 0.3s ease;
             z-index: -1;
+            @media (max-width: 420px) {
+                background-image: url(../img/btn/border.svg);
+            }
         }
     }
 }

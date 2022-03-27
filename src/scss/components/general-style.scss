@@ -9,6 +9,9 @@ body {
         font-size: 15px;
         line-height: 22px;
     }
+    &.hidden {
+        overflow: hidden;
+    }
 }
 
 .page__body{

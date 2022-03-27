@@ -1,12 +1,38 @@
 .info-user {
-    display: flex;
-    justify-content: center;
+    @media (max-width: 420px) {
+        width: 100%;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            border: 1px solid #1E2339;
+            width: 200%;
+            height: 100%;
+            left: -50%;
+            top: 0;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 420px) {
+            overflow-y: scroll;
+            padding: 32px 0;
+            justify-content: flex-start;
+        }
+    }
     &__card {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0 48px;
         position: relative;
+        @media (max-width: 420px) {
+            align-items: flex-start;
+            padding: 0;
+            width: fit-content;
+            margin-right: 24px;
+        }
         &:not(:last-child) {
             &:before {
                 content: '';
@@ -18,6 +44,9 @@
                 right: -0px;
                 top: 0;
                 transform: rotate(10deg);
+                @media (max-width: 420px) {
+                    content: none;
+                }
             }
         }
     }
@@ -37,6 +66,12 @@
         margin: 10px 0 2px;
         display: flex;
         align-items: center;
+        @media (max-width: 420px) {
+            font-size: 20px;
+            line-height: 25px;
+            margin: 4px 0;
+            white-space: nowrap;
+        }
         span {
             display: inline-block;
             background-image: url(../img/info-user/m.svg);

@@ -3,6 +3,11 @@
     border: 1px solid #1E2339;
     border-radius: 14px;
     padding: 6px;
+    @media (max-width: 420px) {
+        width: 100%;
+        border: none;
+        overflow-x: scroll;
+    }
     &__elem {
         display: flex;
         align-items: center;
@@ -19,10 +24,20 @@
         transition: 0.3s ease;
         cursor: pointer;
         user-select: none;
+        @media (max-width: 420px) {
+            padding: 23px 0;
+            margin-right: 23px;
+            white-space: nowrap;
+        }
         &.active {
             border-color: #13CDFF;
             color: #FFFFFF;
             cursor: default;
+            @media (max-width: 420px) {
+                border-radius: 0;
+                border-color: transparent;
+                border-bottom: 2px solid #13CDFF;
+            }
         }
     }
 }

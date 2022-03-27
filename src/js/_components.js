@@ -28,4 +28,5 @@ $('.burger').click(function(){
     $('.lc-sidebar__user-logo-mob').toggleClass('hidden');
     $('.lc-sidebar').toggleClass('active-mob');
     $('.lc-sidebar__content').toggleClass('active-mob');
+    $('body').toggleClass('hidden');
 });
