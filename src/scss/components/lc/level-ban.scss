@@ -1,6 +1,7 @@
 .level-ban {
     position: relative;
     width: fit-content;
+    user-select: none;
     &__percent {
         position: absolute;
         background-size: contain;

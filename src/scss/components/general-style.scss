@@ -10,3 +10,16 @@ body {
         line-height: 22px;
     }
 }
+
+.page__body{
+    &_lc {
+        padding-left: 300px;
+        transition: 0.3s ease;
+        &.collapse {
+            padding-left: 90px;
+        }
+        @media (max-width: 420px) {
+            padding-left: 0;
+        }
+    }
+}

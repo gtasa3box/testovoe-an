@@ -12,6 +12,7 @@
 @import "./components/cards";
 @import "./components/title";
 @import "./components/lang";
+@import "./components/burger";
 
 // подключения компонентов страницы
 @import "./components/header";
@@ -31,3 +32,7 @@
 @import "./components/lc/user-content";
 @import "./components/lc/promocode";
 @import "./components/lc/void";
+    //sidebar
+    @import "./components/lc/lc-sidebar";
+    @import "./components/lc/user-card";
+    @import "./components/lc/nav-sidebar";
